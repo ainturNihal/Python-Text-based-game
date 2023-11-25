@@ -22,8 +22,21 @@ time.sleep(3)
 print(f"{player_name} Thinking...")
 c = input("It's already 12:45pm should I take shower? (y/n): ")
 if c == "y":
-  print(colored("It's better to take shower before I show up to my interview,"green"))
+  print(colored("It's better to take shower before I show up to my interview","green"))
 else:
-  print("Nah, I am plenty cool these showers don't matter to me I am always the best")
-  print("HAHA!")
+  print(colored("Nah, I am plenty cool these showers don't matter to me I am always the best","red"))
+  print(colored("HAHA!", "red"))
+time.sleep(3)
+time = random.randint(9,58)
+print(f"2:{time}")
+time.sleep(3)
+print(f"{player_name} Thinking...")
+c = input("Should i take a nap before the interview? (y/n): ")
+if c == "y":
+  print(colored("I should clear my mind before an interview","green"))
+else:
+  print(colored("Nah why should I? It aint like a hard math exam right?","red"))
+time.sleep(3)
+ptint("Nit finished...")
+
 
