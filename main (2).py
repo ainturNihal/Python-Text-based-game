@@ -2,7 +2,7 @@ from termcolor import colored
 import time
 import random
 print(colored("                        The last breath", "red", attrs=["bold"]))
-print(colored('                       -------------------', "red"))
+print(colored('                       ------------------', "red"))
 time.sleep(2)
 player_name = input(colored("\n\n\nEnter your first name: ","white"))
 time.sleep(1)
