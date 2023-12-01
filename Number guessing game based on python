@@ -27,10 +27,11 @@ while guess_count <= 3:
   guess_count += 1
   if guess == c:
       print("Damn! you won!")
+      print(f"I choosed {c}")
       break
 else:
    print("Oh no... you have lost like others!")
    time.sleep(1)
    print(f"I choosed {c}")
    time.sleep(1)
-   print("Better lucknext time")
+   print("Better luck next time")
