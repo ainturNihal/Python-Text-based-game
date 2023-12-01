@@ -19,3 +19,18 @@ time.sleep(2)
 print("Do you think you can win?")
 time.sleep(2)
 print("Let's find out!")
+number = 1,2,3,4,5,6,7,8,9
+c = random.choice(number)
+guess_count = 1
+while guess_count <= 3:
+  guess = int(input("Take a guess: "))
+  guess_count += 1
+  if guess == c:
+      print("Damn! you won!")
+      break
+else:
+   print("Oh no... you have lost like others!")
+   time.sleep(1)
+   print(f"I choosed {c}")
+   time.sleep(1)
+   print("Better lucknext time")
