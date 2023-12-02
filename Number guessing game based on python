@@ -41,7 +41,7 @@ while guess_count <= 3:
       time.sleep(1)
       print(f"Great work {name}")
       print("You have done an excelent work on this round!")
-    time.sleep(2)
+      time.sleep(2)
       print(colored("\nLet's go  to round 2 then!", 'red')
       break
 else:
