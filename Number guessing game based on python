@@ -1,7 +1,7 @@
 import random
 import time
 from termcolor import colored
-print(colored("                   Number Guessing game", "red", attrs=['bold']))
+print(colored("                  Number Guessing game", "red", attrs=['bold']))
 print(colored("                 -----------------------\n", 'red'))
 print(colored("                       Level - Easy", 'green'))
 print(colored("                      --------------", 'green', attrs=['bold']))
@@ -33,7 +33,7 @@ print("Let's find out!")
 c = random.randint(1,9)
 guess_count = 1
 while guess_count <= 3:
-  guess = int(input("Take a guess: "))
+  guess = int(input(colored("Take a guess: ", 'cyan')))
   guess_count += 1
   if guess == c:
     print(colored("Damn! you won!", 'green'))
@@ -58,4 +58,4 @@ else:
 # round 2
 time.sleep(3)
 print(colored("\n\n\n                   Level - Medium", 'blue'))
-print(colored("                  --------------", 'blue'))
+print(colored("                   ---------------", 'blue'))
