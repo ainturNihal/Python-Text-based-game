@@ -57,4 +57,5 @@ else:
   
 # round 2
 time.sleep(3)
-print(colored("                   Level - Medium", 'yellow'))
+print(colored("\n\n\n                   Level - Medium", 'blue'))
+print(colored("                  --------------", 'blue'))
