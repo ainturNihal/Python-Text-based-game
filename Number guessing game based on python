@@ -36,21 +36,25 @@ while guess_count <= 3:
   guess = int(input("Take a guess: "))
   guess_count += 1
   if guess == c:
-      print(colored("Damn! you won!", 'green'))
-      print(colored(f"I choosed {c}", 'green'))
-      time.sleep(1)
-      print(f"Great work {name}")
-      print("You have done an excelent work on this round!")
-      time.sleep(2)
-      print(colored("\nLet's go  to round 2 then!", 'red')
-      break
+    print(colored("Damn! you won!", 'green'))
+    print(colored(f"I choosed {c}", 'green'))
+    time.sleep(1)
+    print(f"Great work {name}")
+    print("You have done an excelent work on this round!")
+    time.sleep(2)
+    print(colored("\nLet's go  to round 2 then!", 'red'))
+    break
 else:
    print(colored("Oh no... you have lost like others!", 'red'))
    time.sleep(1)
    print(colored(f"I choosed {c}", 'red'))
    time.sleep(1)
    print(colored("Better luck in next round",'red'))
-
-
-
+   time.sleep(3)
+   print(f"{name}, your last round was not good but it is okay you can do better!")
+   time.sleep(2)
+   print(colored("Lets go to round 2!", 'blue'))
+  
 # round 2
+time.sleep(3)
+print(colored("                   Level - Medium", 'yellow'))
