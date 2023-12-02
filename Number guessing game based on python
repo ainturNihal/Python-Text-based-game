@@ -2,9 +2,11 @@ import random
 import time
 from termcolor import colored
 print(colored("                   Number Guessing game", "red", attrs=['bold']))
-print(colored("                 -----------------------", 'red'))
-print(colored(colored("         Level - Easy", 'red'))
-print("This is a game where I will choose a number between 1-9.")
+print(colored("                 -----------------------\n", 'red'))
+print(colored("                      Level - Easy", 'green'))
+print(colored("                     --------------", 'green', attrs=['bold']))
+time.sleep(3)
+print("\n\nThis is a game where I will choose a number between 1-9.")
 time.sleep(1)
 print("And you have to guess the number.")
 time.sleep(2)
