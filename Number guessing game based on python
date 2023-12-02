@@ -37,11 +37,11 @@ while guess_count <= 3:
   guess_count += 1
   if guess == c:
       print(colored("Damn! you won!", 'green'))
-      print(f"I choosed {c}")
+      print(colored(f"I choosed {c}", 'green'))
       break
 else:
    print(colored("Oh no... you have lost like others!", 'red'))
    time.sleep(1)
-   print(f"I choosed {c}")
+   print(colored(f"I choosed {c}", 'red'))
    time.sleep(1)
-   print("Better lucknext time")
+   print(colored("Better lucknext time",'red'))
