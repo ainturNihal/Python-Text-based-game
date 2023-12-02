@@ -38,10 +38,19 @@ while guess_count <= 3:
   if guess == c:
       print(colored("Damn! you won!", 'green'))
       print(colored(f"I choosed {c}", 'green'))
+      time.sleep(1)
+      print(f"Great work {name}")
+      print("You have done an excelent work on this round!")
+    time.sleep(2)
+      print(colored("\nLet's go  to round 2 then!", 'red')
       break
 else:
    print(colored("Oh no... you have lost like others!", 'red'))
    time.sleep(1)
    print(colored(f"I choosed {c}", 'red'))
    time.sleep(1)
-   print(colored("Better lucknext time",'red'))
+   print(colored("Better luck in next round",'red'))
+
+
+
+# round 2
