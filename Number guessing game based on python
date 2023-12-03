@@ -56,12 +56,14 @@ else:
    print(colored("Lets go to round 2!", 'blue'))
 
 # round 2
-time.sleep(3)
+time.sleep(5)
 print(colored("\n\n\n                   Level - Medium", 'blue'))
 print(colored("                   ---------------", 'blue'))
+time.sleep(3)
 print('\n\n\nSame aslast round you will have 3 chances to guess')
 print("But here is the twist, you have to guess from")
 print("1-100")
+time.sleep(1)
 print("Ready? Let's do this!")
 
 b = random.randint(1,3)
