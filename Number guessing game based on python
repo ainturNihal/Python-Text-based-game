@@ -64,21 +64,29 @@ print("But here is the twist, you have to guess from")
 print("1-100")
 print("Ready? Let's do this!")
 
-    b = random.randint(1,100)
-    guess_count = 1
-    while guess_count <= 3:
-      guess = int(input(colored("Take a guess: ", 'pink')))
-      guess_count += 1
-      if guess == b and guess == c:
-        print(colored("CONGRATULATION YOU HAVE WON BOTH ROUNDS", 'green'))
-        print(colored(f"I choosed {c}", 'green'))
-        time.sleep(1)
-        print(colored(f"{name}, you have me and my tem's full respect for winning both times!", 'green'))
-      if guess == b:
-        print(colored("Great work You won this round!", 'green'))
-        print(colored(f"I choosed {b}!", 'green'))
-        break
-  else:
-    print(colored("OH dear!", 'red'))
-    print(colored("You have lost this round too!", 'red'))
-    print(f"I choosed {b}!")
+b = random.randint(1,100)
+guess_count = 1
+while guess_count <= 3:
+  guess = int(input(colored("Take a guess: ", 'cyan')))
+  guess_count += 1
+  if guess == b and guess == c:
+    print(colored("CONGRATULATION YOU HAVE WON BOTH ROUNDS", 'green'))
+    print(colored(f"I choosed {c}", 'green'))
+    time.sleep(1)
+    print(colored(f"{name}, you have me and my tem's full respect for winning both times!", 'green'))
+  if guess == b:
+    print(colored("Great work You won this round!", 'green'))
+    print(colored(f"I choosed {b}!", 'green'))
+  if guess == c and guess != b:
+    print("Oh nooo, You lost this round!")
+    print(f"I choosed {c} this time!")
+    print("Do not worry there is one last round!")
+  if guess !=c and guess == b:
+    print(colored("Great work You won this round!", 'green'))
+    print(colored(f"I choosed {b}!", 'green'))
+    
+    break
+else:
+  print(colored("OH dear!", 'red'))
+  print(colored("You have lost this round too!", 'red'))
+  print(f"I choosed {b}!")
