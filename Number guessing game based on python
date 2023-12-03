@@ -67,7 +67,7 @@ print("Ready? Let's do this!")
 b = random.randint(1,3)
 guess_count = 1
 while guess_count <= 3:
-  guess = int(input(colored("Take a guess: ", 'cyan')))
+  guess = int(input(colored("Take a guess: ", 'blue')))
   guess_count += 1
   if guess == b and guess == c:
     print(colored("CONGRATULATION YOU HAVE WON BOTH ROUNDS", 'green'))
@@ -86,10 +86,10 @@ else:
 # round 3
 time.sleep(3)
 print(colored("\n\n\n                   Level - IMPOSSIBLE", 'red'))
-print(colored("                   ---------------", 'red'))
+print(colored("                   ------------------", 'red'))
 print('\n\n\nSame aslast round you will have 3 chances to guess')
 print("But here is the twist, you have to guess from")
-print(colored("1-1,000,000", 'orange'))
+print("1 - 1,000,000")
 print(colored("Ready? Let's do this!", 'blue'))
 f = random.randint(1,1000000)
 guess_count = 1
