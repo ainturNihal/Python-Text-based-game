@@ -54,8 +54,30 @@ else:
    print(f"{name}, your last round was not good but it is okay you can do better!")
    time.sleep(2)
    print(colored("Lets go to round 2!", 'blue'))
-  
+
 # round 2
 time.sleep(3)
 print(colored("\n\n\n                   Level - Medium", 'blue'))
 print(colored("                   ---------------", 'blue'))
+print('\n\n\nSame aslast round you will have 3 chances to guess')
+print("But here is the twist, you have to guess from")
+print("1-100")
+print("Ready? Let's do this!")
+
+    b = random.randint(1,100)
+    guess_count = 1
+    while guess_count <= 3:
+      guess = int(input(colored("Take a guess: ", 'pink')))
+      guess_count += 1
+      if guess == b and guess == c:
+        print(colored("CONGRATULATION YOU HAVE WON BOTH ROUNDS", 'green'))
+        print(colored(f"I choosed {c}", 'green'))
+        time.sleep(1)
+        print(colored(f"{name}, you have me and my tem's full respect for winning both times!", 'green'))
+      if guess == b:
+        print("Great work You won this round!")
+        break
+  else:
+    print("OH dear!")
+    print("You have lost this round too!")
+    print(f"I choosed {b}!")
