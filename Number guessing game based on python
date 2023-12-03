@@ -75,9 +75,10 @@ print("Ready? Let's do this!")
         time.sleep(1)
         print(colored(f"{name}, you have me and my tem's full respect for winning both times!", 'green'))
       if guess == b:
-        print("Great work You won this round!")
+        print(colored("Great work You won this round!", 'green'))
+        print(colored(f"I choosed {b}!", 'green'))
         break
   else:
-    print("OH dear!")
-    print("You have lost this round too!")
+    print(colored("OH dear!", 'red'))
+    print(colored("You have lost this round too!", 'red'))
     print(f"I choosed {b}!")
