@@ -45,37 +45,38 @@ while guess_count <= 3:
     print(colored("\nLet's go  to round 2 then!", 'red'))
     break
 else:
-   print(colored("Oh no... you have lost like others!", 'red'))
+   print(colored("\n\nOh no... you have lost like others!", 'red'))
    time.sleep(1)
    print(colored(f"I choosed {c}", 'red'))
    time.sleep(1)
-   print(colored("Better luck in next round",'red'))
+   print(colored("\nBetter luck in next round",'red'))
    time.sleep(3)
    print(f"{name}, your last round was not good but it is okay you can do better!")
    time.sleep(2)
-   print(colored("Lets go to round 2!", 'blue'))
+   print(colored("\n\nLet's go to round 2!", 'blue'))
 
 # round 2
 time.sleep(5)
 print(colored("\n\n\n                   Level - Medium", 'blue'))
 print(colored("                   ---------------", 'blue'))
-time.sleep(3)
+time.sleep(1)
 print('\n\n\nSame aslast round you will have 3 chances to guess')
+time.sleep(2)
 print("But here is the twist, you have to guess from")
 print("1-100")
-time.sleep(1)
-print("Ready? Let's do this!")
+time.sleep(2)
+print("\nReady? Let's do this!")
 
 b = random.randint(1,3)
 guess_count = 1
 while guess_count <= 3:
-  guess = int(input(colored("Take a guess: ", 'blue')))
+  guess = int(input("Take a guess: "))
   guess_count += 1
   if guess == b and guess == c:
-    print(colored("CONGRATULATION YOU HAVE WON BOTH ROUNDS", 'green'))
-    print(colored(f"I choosed {c}", 'green'))
+    print(colored("\n\nCONGRATULATION YOU HAVE WON BOTH ROUNDS", 'green'))
+    print(colored(f"\nI choosed {c}", 'green'))
     time.sleep(1)
-    print(colored(f"{name}, you have me and my tem's full respect for winning both times!", 'green'))
+    print(colored(f"\n{name}, you have me and my tem's full respect for winning both times!", 'green'))
   if guess == b:
     print(colored("Great work You won this round!", 'green'))
     print(colored(f"I choosed {b}!", 'green'))
@@ -100,15 +101,19 @@ while guess_count <= 3:
   guess_count += 1
   if guess == b and guess == c and guess == f:
     print(colored("CONGRATULATION YOU HAVE WON BOTH ROUNDS", 'green'))
+    time.sleep(1)
+    print(colored("You habe me and my team's respect!", 'green'))
+    time.sleep(1)
     print(colored(f"I choosed {c}", 'green'))
     time.sleep(1)
-    print(colored(f"{name}, you have me and my tem's full respect for winning both times!", 'green'))
   if guess == f:
     print(colored("Great work You won this round!", 'green'))
     print(colored(f"I choosed {b}!", 'green'))
     break
 else:
+  time.sleep(1)
   print(colored("OH dear!", 'red'))
   print(colored("You have lost this round too!", 'red'))
   print(f"I choosed {b}!")
-  print("Better luck ext time!")
+  time.sleep(2)
+  print("Better luck ext time!!")
