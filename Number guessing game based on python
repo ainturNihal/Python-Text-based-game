@@ -82,3 +82,12 @@ else:
   print(colored("OH dear!", 'red'))
   print(colored("You have lost this round too!", 'red'))
   print(f"I choosed {b}!")
+
+# round 3
+time.sleep(3)
+print(colored("\n\n\n                   Level - IMPOSSIBLE", 'red'))
+print(colored("                   ---------------", 'red'))
+print('\n\n\nSame aslast round you will have 3 chances to guess')
+print("But here is the twist, you have to guess from")
+print("1-1,000,000")
+print("Ready? Let's do this!")
