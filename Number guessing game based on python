@@ -89,5 +89,24 @@ print(colored("\n\n\n                   Level - IMPOSSIBLE", 'red'))
 print(colored("                   ---------------", 'red'))
 print('\n\n\nSame aslast round you will have 3 chances to guess')
 print("But here is the twist, you have to guess from")
-print("1-1,000,000")
-print("Ready? Let's do this!")
+print(colored("1-1,000,000", 'orange'))
+print(colored("Ready? Let's do this!", 'blue'))
+f = random.randint(1,1000000)
+guess_count = 1
+while guess_count <= 3:
+  guess = int(input(colored("Take a guess: ", 'cyan')))
+  guess_count += 1
+  if guess == b and guess == c and guess == f:
+    print(colored("CONGRATULATION YOU HAVE WON BOTH ROUNDS", 'green'))
+    print(colored(f"I choosed {c}", 'green'))
+    time.sleep(1)
+    print(colored(f"{name}, you have me and my tem's full respect for winning both times!", 'green'))
+  if guess == f:
+    print(colored("Great work You won this round!", 'green'))
+    print(colored(f"I choosed {b}!", 'green'))
+    break
+else:
+  print(colored("OH dear!", 'red'))
+  print(colored("You have lost this round too!", 'red'))
+  print(f"I choosed {b}!")
+  print("Better luck ext time!")
