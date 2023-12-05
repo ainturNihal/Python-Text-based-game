@@ -1,0 +1,7 @@
+import random as ra
+print("Hello! I am Stella\n")
+user_name = input("What is your name: ")
+time = 'God Morning','Good Evevnng', "Good After Noon"
+t = ra.choice(time)
+print(f"\n{t}, {user_name}! \n")
+print("Nice to meet you")
