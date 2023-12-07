@@ -23,8 +23,9 @@ print(colored("Aya Fujiwa", "green"))
 time.sleep(1)
 print(colored("You never met your parents", "red"))
 time.sleep(1)
-print(
-    "Just today you have got an offer from a nearby restrurent called Yakiniku Suuchan, and today at 5:30pm you have to go for that interview"
+print("Just today you have got an offer from a nearby\
+ restrurent\n called Yakiniku Suuchan.\nToday at 5:30pm\
+ you have to go for that interview"
 )
 time.sleep(3)
 print(f"{player_name} Thinking...")
