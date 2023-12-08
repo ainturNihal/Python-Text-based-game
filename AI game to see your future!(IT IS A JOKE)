@@ -1,7 +1,24 @@
 import random as ra
+import time as t
 print("Hello! I am Stella\n")
 user_name = input("What is your name: ")
 time = 'God Morning','Good Evevnng', "Good After Noon"
 t = ra.choice(time)
 print(f"\n{t}, {user_name}! \n")
 print("Nice to meet you")
+t.sleep(1)
+iput = input("Ask me a question and I can predict your future: ")
+random = ["Remember this is  a game Do not take this seriously",\
+          "Looking through every timeline", "Calculating all posibilities",\
+          "Your Timeline looks very intersting","our timeline is so funny", \
+          "I have never seen a timeline like yours","Looking through every posibilities"]
+s = ra.choice(random)
+time.sleep(1)
+print("Calculating...")
+time.sleep(1)
+1_loading = ["14%","28%","56%"]
+2_loading = ["65%" , "84%"]
+3_loading = ["89%","9
+print(1loading)
+
+
