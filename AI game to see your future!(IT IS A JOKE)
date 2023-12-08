@@ -6,22 +6,47 @@ mood = 'God Morning','Good Evevnng', 'Good After Noon'
 t = random.choice(mood)
 print(f"\n{t}, {user_name}!")
 print("Nice to meet you\n")
-time.sleep(1)
+time.sleep(0)
 y = input("Ask me a question and I can predict your future: ")
 W = ["Remember this is  a game Do not take this seriously",\
           "Looking through every timeline", "Calculating all posibilities",\
           "Your Timeline looks very intersting","our timeline is so funny", \
           "I have never seen a timeline like yours","Looking through every posibilities"]
 s = random.choice(W)
-time.sleep(1)
+time.sleep(0)
 print("Calculating...")
-time.sleep(1)
+time.sleep(0)
+#all positive responces
+y = "Yes!","Definetly",  "No doubt",'YES!','STRONG YES!'
+positive= ['It is possibe.' , 'It is certain.' , 'It is decidedly so.' ,\
+           'Without a doubt.' , 'Yes definitely.' , 'You may rely on it.' ,\
+           'As  far I see it is most likely possible!", "Most likely." , \
+           "Outlook good." , "Yes." , "Signs point to yes', \
+           'I ran millions of probabilities and I am certain it is possible.' , \
+           'It is probable.' , 'It is decided to happen', \
+           "I better not tell you but IT IS GOING TO HAPPEN!","I think it is possible." , \
+           "I think it is going to happen." , "Shh! quiet it is going to happen!",\
+          "But if you do not work hard it it might fade away."\
+          "But if you do not work for it, eventually it will fade away"]
+#negaive responces
+n = ["NO!","Strong NO!", 'Yeah... I have doubt' , 'NO! DEFINITELY NOT!']
+
+negative = ['Unfortunately no!','Sorry I ran millions of calculations it does not look good!',\
+    'As far I see, It is never possible!',"Don't even try please. It is not for you",\
+    "lave it, It is not going to happen", 'I am sorry but NO', 'I do mot see any inle possibilities',\
+    "Don't even bother about it it is not going to happen", "Leave that out of your mind"\
+    "I am not sure but I think it is not going to happen", "I think it is not going to happen",\
+    "Sorry to say but sometimes somethings are not ment for everyone", 'With hard work you have it.',\
+    ]
+
 aloading = random.randint(1,45)
 bloading = random.randint(50,89)
 cloading = random.randint(90,99)
 print(f"\n\n{aloading}% Completed...")
-time.sleep(3)
+time.sleep(0)
+print("Remember it is a joke DO NOT TAKE THSI SERIOUSLY")
+time.sleep(0)
 print(f"{bloading}% Completed...")
-time.sleep(5)
+time.sleep(0)
 print(f"{cloading}% Completed...")
 
