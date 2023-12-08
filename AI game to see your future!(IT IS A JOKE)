@@ -15,26 +15,25 @@ time.sleep(4)
 print(colored("\n\nDo not worry\nafter collecting your data it is immdietly\nbeing destroyed from my algorithm", 'red'))
 time.sleep(7)
 y = input("\nAsk me a question and see I can predict your future: ")
-W = ["Remember this is  a game Do not take this seriously",\
+W = random.choice(["Remember this is  a game Do not take this seriously",\
           "Looking through every timeline", "Calculating all posibilities",\
           "Your Timeline looks very intersting","Your timeline is so funny", \
-          "I have never seen a timeline like yours","Looking through every posibilities"]
-s = random.choice(W)
+          "I have never seen a timeline like yours","Looking through every posibilities"])
 time.sleep(0)
 print("Calculating...")
 time.sleep(3)
 #all positive responces
-y = random.choice(["Yes!","Definetly",  "No doubt",'YES!','STRONG YES!'])
-positive =random.choice(['It is possibe.' , 'It is certain.' , 'It is decidedly so.' ,\
-           'Without a doubt.' , 'Yes definitely.' , 'You may rely on it.' ,\
-           'As  far I see it is most likely possible!", "Most likely." , \
-           "Outlook good." , "Yes." , "Signs point to yes', \
-           'I ran millions of probabilities and I am certain it is possible.' , \
-           'It is probable.' , 'It is decided to happen', \
-           "I better not tell you but IT IS GOING TO HAPPEN!","I think it is possible." , \
-           "I think it is going to happen." , "Shh! quiet it is going to happen!",\
-          "But if you do not work hard it it might fade away."\
-          "But if you do not work for it, eventually it will fade away"])
+y = random.choice(["Yes!","Definetly!",  "No doubt!",'YES!','STRONG YES!'])
+positive =random.choice(['It is possibe.' , 'It is certain.' , 'It is decidedly so.' ,
+                         'Without a doubt.' , 'Yes definitely.' , 'You may rely on it.' ,
+                         'As far I see it is most likely possible!", "Most likely." ,
+                         "Outlook good." , "Yes." , "Signs point to yes',
+                         'I ran millions of probabilities and I am certain it is possible.' , \
+                         'It is probable.' , 'It is decided to happen', \
+                         "I better not tell you but IT IS GOING TO HAPPEN!","I think it is possible." , \
+                         "I think it is going to happen." , "Shh! quiet it is going to happen!",\
+                        "But if you do not work hard it it might fade away."\
+                        "But if you do not work for it, eventually it will fade away"])
 #negaive responces
 n =random.choice(["NO!","Strong NO!", 'Yeah... I have doubt' , 'NO! DEFINITELY NOT!'])
 
