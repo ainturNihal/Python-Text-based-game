@@ -9,11 +9,12 @@ print(colored(f"\n{t}, {user_name}!", 'green'))
 time.sleep(2)
 print("Nice to meet you\n")
 time.sleep(1)
-print(colored("I am an AI Algorith designed by Nihal to predict future outcome\n\
- by doing numerous probabilities and datas found through your device", 'blue'))
-print(colored("Do not worry after collecting your data it is immdietly being destryed\n\from my algorithm", 'green'))
+print(colored("I am an AI Algorith designed by Nihal", 'blue'))
+print(colored("To predict future outcome by doing numerous probabilities and datas found through your device", 'blue'))
+time.sleep(4)
+print(colored("\n\nDo not worry\nafter collecting your data it is immdietly\nbeing destroyed from my algorithm", 'red'))
 time.sleep(7)
-y = input("Ask me a question and see I can predict your future: ")
+y = input("\nAsk me a question and see I can predict your future: ")
 W = ["Remember this is  a game Do not take this seriously",\
           "Looking through every timeline", "Calculating all posibilities",\
           "Your Timeline looks very intersting","Your timeline is so funny", \
