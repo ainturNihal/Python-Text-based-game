@@ -6,6 +6,7 @@ user_name = input(colored("What is your name?: "))
 mood = 'Good Morning','Good Evevnng', 'Good After Noon'
 t = random.choice(mood)
 print(colored(f"\n{t}, {user_name}!", 'green'))
+time.sleep(2)
 print("Nice to meet you\n")
 time.sleep(1)
 print(colored("I am an AI Algorith designed by Nihal to predict future outcome\n\
@@ -15,12 +16,12 @@ time.sleep(7)
 y = input("Ask me a question and see I can predict your future: ")
 W = ["Remember this is  a game Do not take this seriously",\
           "Looking through every timeline", "Calculating all posibilities",\
-          "Your Timeline looks very intersting","our timeline is so funny", \
+          "Your Timeline looks very intersting","Your timeline is so funny", \
           "I have never seen a timeline like yours","Looking through every posibilities"]
 s = random.choice(W)
 time.sleep(0)
 print("Calculating...")
-time.sleep(0)
+time.sleep(3)
 #all positive responces
 y = random.choice(["Yes!","Definetly",  "No doubt",'YES!','STRONG YES!'])
 positive =random.choice(['It is possibe.' , 'It is certain.' , 'It is decidedly so.' ,\
@@ -52,11 +53,11 @@ aloading = random.randint(1,45)
 bloading = random.randint(50,89)
 cloading = random.randint(90,99)
 print(f"\n\n{aloading}% Completed...")
-time.sleep(0)
-print("Remember it is a joke DO NOT TAKE THSI SERIOUSLY")
-time.sleep(0)
+time.sleep(3)
+print(W)
+time.sleep(5)
 print(f"{bloading}% Completed...")
-time.sleep(0)
+time.sleep(2)
 print(f"{cloading}% Completed...")
-
+time.sleep(2)
 print(*ans)
