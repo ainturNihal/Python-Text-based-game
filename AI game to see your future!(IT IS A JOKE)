@@ -2,11 +2,15 @@ import random
 import time
 print("Hello! I am Stella\n")
 user_name = input("What is your name?: ")
-mood = 'God Morning','Good Evevnng', 'Good After Noon'
+mood = 'Good Morning','Good Evevnng', 'Good After Noon'
 t = random.choice(mood)
 print(f"\n{t}, {user_name}!")
 print("Nice to meet you\n")
-time.sleep(0)
+time.sleep(1)
+print("I am an AI Algorith designed by Nihal to predict future outcome\n\
+ by doing numerous probabilities and datas found through your device")
+print("Do not worry after collecting your data it is immdietly being destryed\n\from my algorithm")
+time.sleep(7)
 y = input("Ask me a question and I can predict your future: ")
 W = ["Remember this is  a game Do not take this seriously",\
           "Looking through every timeline", "Calculating all posibilities",\
@@ -17,8 +21,8 @@ time.sleep(0)
 print("Calculating...")
 time.sleep(0)
 #all positive responces
-y = "Yes!","Definetly",  "No doubt",'YES!','STRONG YES!'
-positive= ['It is possibe.' , 'It is certain.' , 'It is decidedly so.' ,\
+y = random.choice(["Yes!","Definetly",  "No doubt",'YES!','STRONG YES!'])
+positive =random.choice(['It is possibe.' , 'It is certain.' , 'It is decidedly so.' ,\
            'Without a doubt.' , 'Yes definitely.' , 'You may rely on it.' ,\
            'As  far I see it is most likely possible!", "Most likely." , \
            "Outlook good." , "Yes." , "Signs point to yes', \
@@ -27,17 +31,21 @@ positive= ['It is possibe.' , 'It is certain.' , 'It is decidedly so.' ,\
            "I better not tell you but IT IS GOING TO HAPPEN!","I think it is possible." , \
            "I think it is going to happen." , "Shh! quiet it is going to happen!",\
           "But if you do not work hard it it might fade away."\
-          "But if you do not work for it, eventually it will fade away"]
+          "But if you do not work for it, eventually it will fade away"])
 #negaive responces
-n = ["NO!","Strong NO!", 'Yeah... I have doubt' , 'NO! DEFINITELY NOT!']
+n =random.choice(["NO!","Strong NO!", 'Yeah... I have doubt' , 'NO! DEFINITELY NOT!'])
 
-negative = ['Unfortunately no!','Sorry I ran millions of calculations it does not look good!',\
+negative = random.choice(['Unfortunately no!','Sorry I ran millions of calculations it does not look good!',\
     'As far I see, It is never possible!',"Don't even try please. It is not for you",\
     "lave it, It is not going to happen", 'I am sorry but NO', 'I do mot see any inle possibilities',\
     "Don't even bother about it it is not going to happen", "Leave that out of your mind"\
     "I am not sure but I think it is not going to happen", "I think it is not going to happen",\
     "Sorry to say but sometimes somethings are not ment for everyone", 'With hard work you have it.',\
-    ]
+    ])
+
+pone = y,positive
+neone = n,negative
+ans = random.choice([pone,neone])
 
 aloading = random.randint(1,45)
 bloading = random.randint(50,89)
@@ -50,3 +58,4 @@ print(f"{bloading}% Completed...")
 time.sleep(0)
 print(f"{cloading}% Completed...")
 
+print(*ans)
