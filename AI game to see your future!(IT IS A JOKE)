@@ -1,26 +1,26 @@
 import random
 import time
 print("Hello! I am Stella\n")
-user_name = input("What is your name: ")
+user_name = input("What is your name?: ")
 mood = 'God Morning','Good Evevnng', 'Good After Noon'
 t = random.choice(mood)
-print(f"\n{t}, {user_name}! \n")
-print("Nice to meet you")
+print(f"\n{t}, {user_name}!")
+print("Nice to meet you\n")
 time.sleep(1)
 y = input("Ask me a question and I can predict your future: ")
-random = ["Remember this is  a game Do not take this seriously",\
+W = ["Remember this is  a game Do not take this seriously",\
           "Looking through every timeline", "Calculating all posibilities",\
           "Your Timeline looks very intersting","our timeline is so funny", \
           "I have never seen a timeline like yours","Looking through every posibilities"]
-s = ra.choice(random)
+s = random.choice(W)
 time.sleep(1)
 print("Calculating...")
 time.sleep(1)
-aloading = ra.randint(1,45)
-bloading = ra.randint(50,89)
-cloading = ra.randint(90,99)
-print(f"{aloading}% Completed...")
-time.slep(3)
+aloading = random.randint(1,45)
+bloading = random.randint(50,89)
+cloading = random.randint(90,99)
+print(f"\n\n{aloading}% Completed...")
+time.sleep(3)
 print(f"{bloading}% Completed...")
 time.sleep(5)
 print(f"{cloading}% Completed...")
