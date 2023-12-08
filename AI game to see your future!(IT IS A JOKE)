@@ -1,17 +1,18 @@
 import random
 import time
-print("Hello! I am Stella\n")
-user_name = input("What is your name?: ")
+from termcolor import colored
+print(colored("Hello! I am Stella\n", 'blue'))
+user_name = input(colored("What is your name?: "))
 mood = 'Good Morning','Good Evevnng', 'Good After Noon'
 t = random.choice(mood)
-print(f"\n{t}, {user_name}!")
+print(colored(f"\n{t}, {user_name}!", 'green'))
 print("Nice to meet you\n")
 time.sleep(1)
-print("I am an AI Algorith designed by Nihal to predict future outcome\n\
- by doing numerous probabilities and datas found through your device")
-print("Do not worry after collecting your data it is immdietly being destryed\n\from my algorithm")
+print(colored("I am an AI Algorith designed by Nihal to predict future outcome\n\
+ by doing numerous probabilities and datas found through your device", 'blue'))
+print(colored("Do not worry after collecting your data it is immdietly being destryed\n\from my algorithm", 'green'))
 time.sleep(7)
-y = input("Ask me a question and I can predict your future: ")
+y = input("Ask me a question and see I can predict your future: ")
 W = ["Remember this is  a game Do not take this seriously",\
           "Looking through every timeline", "Calculating all posibilities",\
           "Your Timeline looks very intersting","our timeline is so funny", \
