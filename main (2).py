@@ -2,7 +2,7 @@ import random
 import time
 
 from termcolor import colored
-
+print("This game is recomended to play in PC/Laptop\nAS some arts may not appea as it was intented in mobile")
 print(colored("                        THE LAST BREATH", "red",
               attrs=["bold"]))
 print(colored('                       ------------------', "red"))
@@ -13,13 +13,43 @@ player_name = input(colored("\n\n\nEnter your first name: ", "white"))
 time.sleep(1)
 print(f"{player_name}, you live in")
 print(colored("Yukicho, Hiroshima in Japan", "blue"))
+
 time.sleep(2)
 print("A bit far away from crowded area")
 time.sleep(1)
 print(f"The local people knows you as {player_name} Fuji.")
 time.sleep(1)
-print("You livewith your garndmother")
-print(colored("Aya Fujiwa", "green"))
+print("You live with your garndmother Aya Fujiwa in this house")
+time.sleep(2)
+print('''                                                    ___
+                                             ___..--'  .`.
+                                    ___...--'     -  .` `.`.
+                           ___...--' _      -  _   .` -   `.`.
+                  ___...--'  -       _   -       .`  `. - _ `.`.
+           __..--'_______________ -         _  .`  _   `.   - `.`.
+        .`    _ /\    -        .`      _     .`__________`. _  -`.`.
+      .` -   _ /  \_     -   .`  _         .` |   Hello!  |`.   - `.`.
+    .`-    _  /   /\   -   .`        _   .`   |___________|  `. _   `.`.
+  .`________ /__ /_ \____.`____________.`     ___       ___  - `._____`|
+    |   -  __  -|    | - |  ____  |   | | _  |   |  _  |   |  _ |
+    | _   |  |  | -  |   | |.--.| |___| |    |___|     |___|    |
+    |     |--|  |    | _ | |'--'| |---| |   _|---|     |---|_   |
+    |   - |__| _|  - |   | |.--.| |   | |    |   |_  _ |   |    |
+ ---``--._      |    |   |=|'--'|=|___|=|====|___|=====|___|====|
+ -- . ''  ``--._| _  |  -|_|.--.|_______|_______________________|
+`--._           '--- |_  |:|'--'|:::::::|:::::::::::::::::::::::|
+_____`--._ ''      . '---'``--._|:::::::|:::::::::::::::::::::::|
+----------`--._          ''      ``--.._|:::::::::::::::::::::::|
+`--._ _________`--._'        --     .   ''-----.................'
+     `--._----------`--._.  _           -- . :''           -    ''
+          `--._ _________`--._ :'              -- . :''      -- . ''
+ -- . ''       `--._ ---------`--._   -- . :''
+          :'        `--._ _________`--._:'  -- . ''      -- . ''
+  -- . ''     -- . ''    `--._----------`--._      -- . ''     -- . ''
+                              `--._ _________`--._
+ -- . ''           :'              `--._ ---------`--._-- . ''    -- . ''
+          -- . ''       -- . ''         `--._ _________`--._   -- . ''
+:'                 -- . ''          -- . ''  `--._----------`--._''')
 time.sleep(1)
 print(colored("You never met your parents", "red"))
 time.sleep(1)
@@ -79,59 +109,6 @@ if c == "n":
   time.sleep(3)
   print(f"{player_name} saw the mountains in distance")
   time.sleep(2)
-  
-  #this part of the program was taken from geeks for geeks
-  # Python3 program for the above approach
-
-  # Function to create the mountain
-  # sequence pattern
-  def printPatt(n):
-
-    k1 = 3; k2 = 3; gap = 5;
-
-    # Outer loop to handle the row
-    for i in range(1, 4):
-
-      # Inner loop to handle the
-      # Column
-      for j in range(1, (5 * n) + 1):
-
-        if (j > k2 and i < 3):
-          k2 += gap;
-          k1 += gap;
-
-        # Condition to print the
-        # star in mountain pattern
-        if (j >= k1 and j <= k2):
-          print("*", end = "");
-        else:
-          print(" ", end = "");
-      print("\n", end = "");
-
-      # Condition to adjust the value of
-      # K1 and K2 for printing desire
-      # Pattern
-      if (i + 1 == 3):
-        k1 = 1;
-        k2 = (5 * n);
-
-      else:
-        k1 = 3;
-        k2 = 3;
-        k1 -= 1;
-        k2 += 1;
-    print(end = "");
-
-  # Driver Code
-
-  # Given Number N
-  N = 5;
-
-  # Function call
-  printPatt(N);
-
-  # This code is contributed by Code_Mech
-
   print("These mountains is so stunning takes my breath everytime I look at it!")
   time.sleep(4)
   print("This view never gets old!")
@@ -142,8 +119,6 @@ if c == "n":
     time.sleep(1)
     print("But how can I even ignore this stunning view?")
     time.sleep(1)
-    print(
-        colored("You took your phone, a bottle of water and went for a walk",
-                "red"))
+    print(colored("You took your phone, a bottle of water and went for a walk","red"))
 else:
   print("Nah,it's fine I can skip today")
