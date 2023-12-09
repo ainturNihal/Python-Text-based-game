@@ -51,12 +51,10 @@ _____`--._ ''      . '---'``--._|:::::::|:::::::::::::::::::::::|
           -- . ''       -- . ''         `--._ _________`--._   -- . ''
 :'                 -- . ''          -- . ''  `--._----------`--._''')
 time.sleep(1)
-print(colored("You never met your parents", "red"))
+print(colored("\n\n\n\n\n\nYou never met your parents", "red"))
 time.sleep(1)
-print("Just today you have got an offer from a nearby\
- restrurent\n called Yakiniku Suuchan.\nToday at 5:30pm\
- you have to go for that interview"
-)
+print("Just today you have got an offer from a nearby restrurent called Yakiniku Suuchan.")
+print("Today at 5:30pm you have to go for that interview")
 time.sleep(3)
 print(f"{player_name} Thinking...")
 shower = input("It's already 12:45pm should I take shower? (y/n): ")
@@ -120,5 +118,6 @@ if c == "n":
     print("But how can I even ignore this stunning view?")
     time.sleep(1)
     print(colored("You took your phone, a bottle of water and went for a walk","red"))
+    
 else:
   print("Nah,it's fine I can skip today")
