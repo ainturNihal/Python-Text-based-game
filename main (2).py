@@ -49,7 +49,11 @@ else:
   print(colored("Nah, I am plenty cool these showers don't matter to me I am always the best","red"))
   print(colored("HAHA!", "red"))
 time.sleep(3)
-print("2:45")
+
+
+lt = random.randint(00,59)
+print(colored(f"Its 2:{lt}pm",'red'))
+
 time.sleep(3)
 print(f"{player_name} Thinking...")
 c = input("Should i take a nap before the interview? (y/n): ")
@@ -64,14 +68,71 @@ else:
       colored("Nah why should I? It ain't like a hard math exam right?",
               "red"))
 time.sleep(3)
+forest = random.randint(10,20)
+print(f"You took a walk for {forest} minute...")
+time.sleep(4)
 if c == "y":
   print(colored(f"Oh no! {player_name} You are running late Hurry up!", "red"))
 if c == "n":
   print(f"{player_name} stepped out to the corridor to see the mountains",
         'green')
   time.sleep(3)
-  print(
-      "These mountains is so stunning takes my breath everytime I look at it!")
+  print(f"{player_name} saw the mountains in distance")
+  time.sleep(2)
+  
+  #this part of the program was taken from geeks for geeks
+  # Python3 program for the above approach
+
+  # Function to create the mountain
+  # sequence pattern
+  def printPatt(n):
+
+    k1 = 3; k2 = 3; gap = 5;
+
+    # Outer loop to handle the row
+    for i in range(1, 4):
+
+      # Inner loop to handle the
+      # Column
+      for j in range(1, (5 * n) + 1):
+
+        if (j > k2 and i < 3):
+          k2 += gap;
+          k1 += gap;
+
+        # Condition to print the
+        # star in mountain pattern
+        if (j >= k1 and j <= k2):
+          print("*", end = "");
+        else:
+          print(" ", end = "");
+      print("\n", end = "");
+
+      # Condition to adjust the value of
+      # K1 and K2 for printing desire
+      # Pattern
+      if (i + 1 == 3):
+        k1 = 1;
+        k2 = (5 * n);
+
+      else:
+        k1 = 3;
+        k2 = 3;
+        k1 -= 1;
+        k2 += 1;
+    print(end = "");
+
+  # Driver Code
+
+  # Given Number N
+  N = 5;
+
+  # Function call
+  printPatt(N);
+
+  # This code is contributed by Code_Mech
+
+  print("These mountains is so stunning takes my breath everytime I look at it!")
   time.sleep(4)
   print("This view never gets old!")
   time.sleep(3)
